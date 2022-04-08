@@ -1,7 +1,6 @@
-#Ideas for Implementations of `isEven` in Python 3
+# Ideas for Implementations of `isEven` in Python 3
 **The following are some ideas for figuring out whether or not an integer is even using Python.**
 <hr>
-***
 ```
 import random
 def isEven(x):
