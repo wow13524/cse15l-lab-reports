@@ -5,7 +5,7 @@ This is a guide on how to access and use your course-specific account on `ieng6`
 
 ## Obtaining Your Course-Specific Account Login
 Log into the [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php) site using your UCSD username and PID, then click on the blue 'Submit' button.  
-`TODO IMAGE`  
+![Account Lookup Page](cse15lsp22-lr1-account-lookup.png)   
 There should be a section near the top of the page labelled 'Additional Accounts' with a list of buttons below.  Your course-specific account name is the one following the format `cs15lsp22XXX`, keep note of this.
 
 > ### First Time Login
@@ -13,24 +13,25 @@ There should be a section near the top of the page labelled 'Additional Accounts
 >
 > If this is your first time attempting to log into your course-specific account, the password must be set in order for you to log in.  
 Click on the button with your course-specific account name on it to navigate to its account page and click on 'change your password' at the top of the page.  
-`TODO IMAGE`  
+![Course-Specific Account](cse15lsp22-lr1-course-specific-account.png)  
+![Change Your Password](cse15lsp22-lr1-change-your-password.png)    
 Log in again with your UCSD username and PID.  You will be prompted to enter your current password, as well as a new password.  
 Ensure the fields 'Change MyTritonLink password?' is set to `No` and 'Change course-specific account passwords?' is set to `Yes`.  
 Press your Enter/Return key to set your password.  
-`TODO IMAGE`  
+![Set Your Password](cse15lsp22-lr1-set-password.png)    
 
 <hr>
 
 ## Installing VS Code
 Download the installer from the [Visual Studio Code website](https://code.visualstudio.com/) and run it.  
-`TODO IMAGE`  
+![VS Code](cse15lsp22-lr1-vs-code.png)     
 The install process is straightforward and should result in a working installation of VS Code on your system.  
 
 <hr>
 
 ## Remotely Connecting
 Open VS Code and open a terminal window using the keyboard shortcut `` Ctrl + ` `` or navigating to `Terminal -> New Terminal` through the top menu.  
-`TODO IMAGE`  
+![VS Code Terminal](cse15lsp22-lr1-vs-code-terminal.png)    
 In the terminal, you can access your course-specific account on `ieng6` using the following command:
 ```
 ssh {CSA}@ieng6.ucsd.edu
@@ -96,7 +97,7 @@ You will be interacting with Linux through the command line using various comman
 > * `ls` : Lists the contents of the working directory.
 > * `ls ~/..` : Lists the contents of the parent of your home directory.
 > * `ls -lat /` : Lists the contents of the root directory with **l**ong format, **a**ll files, and sorting by **t**ime.  
-> `TODO IMAGE`
+> ![`ls -lat /`](cse15lsp22-lr1-ls-lat.png)   
 > 
 > <hr>
 >
@@ -127,7 +128,7 @@ You can copy files to a remote server using the `scp` command **on your own mach
 In this course, you will be transferring files from your local machine to `ieng6`.  
 Following the format above, the `<user>` argument would be your course-specific account name and `<host>` would be `ieng6@ucsd.edu`.  
 The process of copying files to `ieng6` looks like this:  
-`TODO IMAGE`  
+![scp Demo](cse15lsp22-lr1-scp-demo.png)  
 Notice that each use of the `scp` command requires you to enter the password to your course-specific account; this is mitigated by [Setting an SSH Key](#setting-an-ssh-key).
 
 <hr>
@@ -138,12 +139,13 @@ You can use the `ssh-keygen` command in a terminal on your local machine to gene
 > ### Windows Users
 > <hr>
 >
-> If you are running Windows on your local machine, use `ssh-keygen -t ed25519` instead.
+> If you are running Windows on your local machine, use `ssh-keygen -t ed25519` instead.  
+> You may also have to be running a PowerShell terminal as an Administrator.
 
 When prompted where to save the key, you can press enter to save it to an `.ssh` folder in your home directory.  
 **When prompted to enter a passphrase, just press enter.**  
 Your terminal output should look like this:  
-`TODO IMAGE`  
+![ssh-keygen](cse15lsp22-lr1-ssh-keygen.png)  
 > ### Windows Users
 > <hr>
 >
@@ -192,7 +194,7 @@ Luckily, there are a few shortcuts you can take to minimize repitition and optim
 > This is useful for cases where the same set of commands need to be rerun multiple times, most likely between changes made to a file.
 
 These strategies used together can be used to copy over source code to the server, compile, and execute, all in one go!  
-`TODO IMAGE`
+![Optimization Strategies](cse15lsp22-lr1-optimization-strategies.png)  
 
 <hr>
 
