@@ -1,4 +1,4 @@
-# Week 4 - Lab Report 2
+# Week 6 - Lab Report 3
 This lab report aims to document the process and results of **Streamlining `ssh` Configuration**, **Setting Up Github Access from `ieng6`**, and **Copying Whole Directories with `scp -r`**.
 
 ## Streamlining `ssh` Configuration
